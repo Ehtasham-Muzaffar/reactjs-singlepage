@@ -1,0 +1,118 @@
+
+.container{
+    width: calc(100%);
+    display: flex;
+    padding: 20px 20px;
+    background: #f5f5f5;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menus ul{
+    display: flex;
+    gap: 20px;
+
+}
+.menus ul li{
+    list-style-type: none;
+    font-size: 20px;
+    text-transform: uppercase;
+
+
+}
+
+.button button{
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    background-color: #8b3;
+    color: white;
+    font-size: 20px;
+
+}
+
+.logo img{
+    width: 80%;
+}
+.logo{
+    width: 200px;
+}
+.mcontainer{
+    
+    display: none;
+    width: 100%;
+}
+.mobilemenu{
+    display: none;
+}
+@media screen and (max-width:450px) {
+
+    .container{
+        
+        display: none;
+        
+    }
+    .mcontainer{
+        
+        /* display: block; */
+        
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        border: 1px solid #f5f5f5;
+        padding: 10px;
+    }
+    .mcontainer .mlogo img{
+        
+        width: 50%;
+        /* border: 1px solid green; */
+    }
+    .mcontainer .mburgericon img{
+        
+        width: 50px;
+        /* border: 1px solid blue; */
+    }
+    .mobilemenu{
+        
+        background: #8b3;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            /* overflow-x: hidden; */
+        position: absolute; 
+        transition: 1s ease;
+        left: 100%;
+        display: none;
+        /* animation: leftalign 1s ease-in-out; */
+        /* visibility: hidden; */
+        
+        
+
+    }
+
+    .show{
+      display:  flex;
+        /* visibility: inherit; */
+        left: 0;
+        
+    }
+    .mobilemenu ul li {
+        
+    list-style-type: none;
+    margin: 20px 0;
+    font-size: 40px;
+    color: #f5f5f5;
+    /* align-items: center; */
+    text-align: center;
+    
+    }
+    .mobilemenu ul li:hover {
+        background: black;
+            padding: 20px;
+            border-radius: 12px;
+            transition: 1s ease;
+}       
+}

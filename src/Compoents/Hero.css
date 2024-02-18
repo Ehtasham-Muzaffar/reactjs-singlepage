@@ -1,0 +1,70 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.herocontainer{
+    width: 1280px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.herocontainer h1{
+    width: 70%;
+    font-size: 80px;
+    line-height: 101px;
+    text-align: center;
+
+
+}
+.herocontainer h1 span{
+    background-color: #8b3;
+    padding: 10px;
+    border-radius: 12px;
+}
+.herocontainer p{
+    text-align:center;
+    font-size: 18px;
+    line-height: 26px;
+}
+.herocontainer button{
+    padding: 20px 40px;
+    border: transparent;
+    background: #8b3;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    
+    transition: 0.5s ease ;
+}
+
+.herocontainer button:hover{
+    transform: translateY(-12px);
+    background-color: white;
+    color:#8b3;
+    border: 1px solid #8b3;
+}
+
+.code{
+    background-color: transparent !important;
+
+
+}
+
+@media screen and (max-width:460px) {
+    .herocontainer h1{
+        width: 80%;  
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    .herocontainer p{
+        font-size: 16px;
+        padding: 0 5px;
+    }
+}
