@@ -4,6 +4,7 @@ import Navmobile from './Compoents/Navmobile'
 import Hero from './Compoents/Herosection'
 import Subsection from './Compoents/Subsectionbox'
 import Aboutussection from './Compoents/Aboutussection'
+import GetinTouch from './Compoents/GetinTouch'
 const App = () => {
   return (
   <>
@@ -12,6 +13,7 @@ const App = () => {
   <Hero/>
   <Subsection/>
   <Aboutussection/>
+  <GetinTouch/>
   </>
   )
 }
